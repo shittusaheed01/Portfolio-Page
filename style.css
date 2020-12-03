@@ -103,16 +103,15 @@ nav{
 }
 .img-btn{
     font-size: 16px;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 10px;
     border-radius: 4px ;
     border: none;
     background-color: slategrey;
-}
-.img-text button a{
     color: whitesmoke;
+    display: inline-block;
 }
-.img-text button:hover{
+.img-btn:hover{
     font-weight: 600;
     background-color:cadetblue;
     transition: all ease 0.5s;
@@ -167,18 +166,16 @@ nav{
     border-radius: 4px;
     border: none;
 }
-#contact-form button{
+#submit{
     width: 80px;
     height: 40px;
     margin: 30px auto auto auto;
     background-color:slategrey;
     border-radius: 4px;
     border: none;
+    color: whitesmoke;
 }
-#contact-form button a{
-    color: black;
-}
-#contact-form button:hover,{
+#contact-form button:hover{
     background-color: white;
     color:black;
     transition: all ease 0.5s;
