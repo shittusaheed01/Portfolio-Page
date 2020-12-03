@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    max-width: 100%;
+    
+}
+#welcome-section{
+    background-color: #edf2f4;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #9a8c98;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.09);
+    z-index: 1;
+}
+.menu{
+    display: flex;
+    padding-right: 30px;
+}
+.menu li a{
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-family: ;
+}
+.menu li a:hover{
+    background-color: whitesmoke;
+    transition: all ease 0.5s;
+    font-weight: 500;
+}
+#home-texts{
+    text-transform: capitalize;
+    width: 300px;
+}
+#home-texts h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #003049;
+}
+#portfolio-section{
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.09);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#portfolio-section h1{
+    font-size: 30px;
+}
+#portfolio-container{
+    display: flex;
+    width: 80%;
+    /* flex-direction: column; */
+    /*justify-content: center; */
+    /* align-items: center; */ 
+    flex-wrap: wrap;
+    align-content: center;
+}
+.p-box{
+    width: 350px; 
+    background:rgba(0,0,0,0.1);
+    border: 1px solid white;
+    padding: 10px;
+    padding-top: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.09);
+}
+.p-box img{
+    display: block;
+    max-width: 80%;
+    margin: auto;
+}
+.img-text{
+    text-align: center;
+}
+.img-btn{
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 4px ;
+    border: none;
+    background-color: slategrey;
+}
+.img-text button a{
+    color: whitesmoke;
+}
+.img-text button:hover{
+    font-weight: 600;
+    background-color:cadetblue;
+    transition: all ease 0.5s;
+}
+.img-text p{
+    font-size: 15px;
+}
+#contact-section{
+    display: flex;
+    background-color: darkgray;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+#contact-section h1{
+    margin-top: 90px;
+    font-size: 30px;
+}
+#contact-form{
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    justify-content: center; 
+    /* align-items: center; */
+}
+#contact-form form{
+    display: block;
+    width: 500px;
+    position: relative;
+}
+#contact-form input,#contact-form label, #contact-form textarea, #contact-form button{
+    display: block;
+}
+#contact-form label{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+#contact-form input{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    font-size: 13px;
+}
+#contact-form textarea{
+    width: 100%;
+    padding: 5px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+}
+#contact-form button{
+    width: 80px;
+    height: 40px;
+    margin: 30px auto auto auto;
+    background-color:slategrey;
+    border-radius: 4px;
+    border: none;
+}
+#contact-form button a{
+    color: black;
+}
+#contact-form button:hover,{
+    background-color: white;
+    color:black;
+    transition: all ease 0.5s;
+    cursor:pointer;
+}
+#profile-link{
+    display: flex;
+}
+#profile-link a{
+    font-size: 20px;
+    padding: 10px;
+    color:black;
+}
+#profile-link a:hover{
+    font-weight: 800;
+    background-color: slategrey;
+    color: whitesmoke;
+}
+@media only screen and (min-width: 768px){
+    #home-texts{
+        width: 600px;
+    }
+}
+@media only screen and (min-width: 1400px){
+    #home-texts{
+        width: 800px;
+    }
+    #portfolio-container{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 40px;
+    }
+    .p-box{
+        margin-right: 20px;
+    }
+
+}
